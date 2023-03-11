@@ -1,0 +1,110 @@
+1.
+Date: 11.03.2022
+
+GitHub
+SCENTRALIZOWANY SYSTEM KONTROLI WERSJI
+
+pwd- zwraca ścieżkę do katalogu, w którym jestem
+$ znak zachęty
+~ TYLDA katalog domowy użytkownika, to ten katalog, do którego jesteśmy zalogowani
+
+ls może przyjmować argumenty
+
+/c/Users/eweli
+    ..    .
+
+ls Documents
+ls ~/Documents                    WIELKOŚĆ LITER MA ZNACZENIE
+ls ./Documents
+.  to katalog, w którym się znajduję
+.. to katalog poprzedni
+~  to katalog domowy
+
+POLECENIE ls OPCJE:
+ls -a pokazuje wszystkie katalogi, nawet te ukryte (ukryte tzn. nazwa zaczyna się od kropki)
+
+ls -h pokazuje wielkość danych w czytlny sposób
+
+ls -l link (skrót)
+
+ls -ahl plik płaski np. zdjęcie, tekst, .exe, .pdf nie można w nie wejść głębiej
+
+cd przenosi do innego katalogu
+
+cd ../..
+
+mkdir make directory tworzy katalog
+
+mkdir arpdatapl9
+ls sprawdzamy czy istnieje
+cd przenosi do katalogu
+
+-p to katalogi zagnieżdżone
+touch to wydmuszka, jeśli plik nie istnieje to go tworzy
+touch names.txt
+
+cat wyświetla zawartość pliku tekstowego
+
+vim names.txt
+vim to edytor tekstowy
+
+jeśli chcemy pisac w vim to trzeba nacisnąć ins
+jeśli chcemy wyjść z trybu pisania klikamy ctrl + c
+potem możemy zapisać :wq
+samo w zapisze, ale nie wychodzi
+q tylko wychodzi
+! wycjodzi i NIE zapisuje
+
+Jeśli chcemy kopiowac tekst, to musimy kursor ustawić przed pierwszą literką, którą chcemy skopiować i klikamy 'v' zaznaczamy strzałkami i potem p;rawym przyciskiem myszki i wklej
+
+d to delete czyli cut xd
+y to copie y to skrót od YANKED
+
+jeśli wychodzimy z trybu ins,żeby zapisać to wchodzimy wtedy w tryb COMMAND tak to się nazywa
+
+p wkleja zaznaczony iskopiowany tekst
+u undo czyli wstecz
+
+ctrl + l CZYSZCZENIE KONSOLI
+cp kopiuje plik
+cp -r kopiuje katalog
+
+REPEZYTORIUM lokalne czyli każdy ma do niego dostęp, my go klonujemy i pracujemy na klonie
+
+PRZECHOWYWANE SĄ TYLKO ZMIANY A NIE WESJE, ALE GIT WIE, JAKICH ZMIAN UŻYĆ, ŻEBY NP. POKAZAĆ WERSJĘ PIERWSZĄ
+
+Ciekawe,  czy dobrze tworzę notatki w repezytorium
+
+
+git log to historia zmian
+git status pokazuje zmiany od ostaniego zapisu
+git config to wprowadzanie zmian
+git config --global user.name
+
+
+POLECENIA:
+
+1. Status czyli weryfikacjaniezapisanych zmian od momentu klonowania
+2. Sledzenie zmian git add i nazwa pliku
+   git add * śledzi wszystkie zmiany
+
+Status spr. czy są zmiany
+mkdir tworzy folder
+
+Trzeba dodać zm iany, żeby były widoczne w statusie
+Commit to zapisy - higiena pracy wiąże się z tym jak często je robimy
+
+git commit -m "tutaj opis zmiany"
+
+git push
+
+
+GAŁĘZIE:
+1. Notatki
+2. Kod
+3. Ćwiczenia
+
+i np. po 10 lekcjach możemy je scalić z głównym szablonem
+
+git branch pokazuje nam która gałąź
+git checkout i nazwa gałęzi zmienia nam branch
